@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Chat UI is built from AI Elements in `src/components/ai-elements/`, composed in `src/components/chat/`; keep those primitives instead of hand-rolled chat parts, so a real AI backend can plug in later without a rewrite.
+- The chat is currently a design preview with canned replies and no persistence; replace the timer reply in the chat component with a server function when real AI is added.
